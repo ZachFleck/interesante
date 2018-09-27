@@ -36,13 +36,25 @@ public class BasketballController
 			isfinished = true;
 		}
 
-		String response = JOptionPane.showInputDialog(null, "how many shots have been made");
-		while (!validDouble(response))
+		
+		
+		String responsePercentage = JOptionPane.showInputDialog(null, "what percentage of the shots have you made out of all the shots you've taken");
+		while (!validDouble(responsePercentage))
 		{
 			JOptionPane.showMessageDialog(null, "got the right answer ");
 		}
-		response = JOptionPane.showInputDialog(null, "Got to do the right answer");
-		myPractice.setAttemptPercentage(Double.parseDouble(response));
+		responsePercentage = JOptionPane.showInputDialog(null, "Got to do the right answer");
+		myPractice.setAttemptPercentage(Double.parseDouble(responsePercentage));
+		{
+			while (responsePercentage == null || !validDouble(responsePercentage))
+			{
+				
+			String responseAmount= JOptionPane.showInputDialog(null, "How many shots have you taken");
+			
+			
+			}
+		}
+		
 	}
 
 	

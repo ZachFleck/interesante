@@ -78,6 +78,4 @@ public class BasketballModel
 			this.attemptsMade = attemptsMade;
 		}
 	
-	
-	
 	}
